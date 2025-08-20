@@ -1,9 +1,9 @@
 import './App.css'
-import { Painel } from './components/Painel/Painel'
+import { Painel } from './components/Painel'
 
 function App() {
   return (
-    <Painel></Painel>
+    <Painel/>
   )
 }
 
