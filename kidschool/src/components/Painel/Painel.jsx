@@ -8,19 +8,19 @@ const materias = [
 ];
 
 const coresPorMateria = {
-  "Matemática": "#f28b82",       // vermelho pastel
-  "Português": "#aecbfa",        // azul pastel
-  "História": "#fff475",         // amarelo pastel
-  "Geografia": "#d7aefb",        // roxo pastel
-  "Ciências": "#a7ffeb",         // verde água pastel
-  "Física": "#fdcfe8",           // rosa pastel
-  "Química": "#cbf0f8",          // azul clarinho
-  "Biologia": "#ccff90",         // verde pastel
-  "Inglês": "#fbbc04",           // amarelo forte pastel
-  "Educação Física": "#ffab91",  // laranja pastel
-  "Artes": "#d7aefb",            // roxo pastel
-  "Filosofia": "#fef08a",        // amarelo pastel
-  "Sociologia": "#c8e6c9",       // verde claro pastel
+  "Matemática": "#f28b82",
+  "Português": "#aecbfa",
+  "História": "#fff475",
+  "Geografia": "#d7aefb",
+  "Ciências": "#a7ffeb",
+  "Física": "#fdcfe8",
+  "Química": "#cbf0f8",
+  "Biologia": "#ccff90",
+  "Inglês": "#fbbc04",
+  "Educação Física": "#ffab91",
+  "Artes": "#d7aefb",
+  "Filosofia": "#fef08a",
+  "Sociologia": "#c8e6c9",
 };
 
 const Painel = () => {
@@ -41,6 +41,9 @@ const Painel = () => {
   return (
     <div className={styles.faixaRoxa}>
       <h1 className={styles.texto}>Aprenda enquanto evolui seu personagem!</h1>
+
+      {/* Botão Cadastrar */}
+      <button className={styles.botaoCadastrar}>Cadastrar</button>
 
       <div className={styles.carrosselContainer}>
         <button className={styles.seta} onClick={() => scroll('left')}>&#10094;</button>

@@ -76,11 +76,11 @@
 }
 
 .seta {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0);
   border: none;
   color: white;
   font-size: 26px;
-  padding: 10px;
+  padding: 5px;
   border-radius: 50%;
   cursor: pointer;
   z-index: 1;
@@ -88,5 +88,23 @@
 }
 
 .seta:hover {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.botaoCadastrar {
+  align-self: center;       /* centraliza dentro do flex container .faixaRoxa */
+  margin: 0 0 40px 0;       /* distância abaixo do botão */
+  padding: 12px 28px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+  border: none;
+  background-color: #fafafa; /* verde pastel */
+  color: purple;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.botaoCadastrar:hover {
+    color: white;
+  background-color: #24aa6c; /* verde mais escuro no hover */
 }
