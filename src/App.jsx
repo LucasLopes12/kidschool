@@ -1,6 +1,7 @@
 import './App.css'
 import { useEffect } from 'react';
 import { Painel } from './components/Painel'
+import { Cabecalho } from './components/Cabecalho'
 
 function App() {
 
@@ -9,7 +10,10 @@ function App() {
   })
 
   return (
-    <Painel/>
+    <>
+      <Cabecalho/>
+      <Painel/>
+    </>
   )
 }
 
