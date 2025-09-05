@@ -2,6 +2,7 @@ import './App.css'
 import { useEffect } from 'react';
 import { Painel } from './components/Painel'
 import { Cabecalho } from './components/Cabecalho'
+import { Gamificacao } from './components/Gamificacao/Gamificacao';
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
     <>
       <Cabecalho/>
       <Painel/>
+      <Gamificacao/>
     </>
   )
 }
