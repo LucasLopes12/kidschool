@@ -1,0 +1,1 @@
+export { Gamificacao } from './Gamificacao.jsx';

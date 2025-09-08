@@ -1,0 +1,32 @@
+.cabecalho {
+  background-color: #6a0dad; /* Roxo */
+  padding: 15px 30px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 50px; /* Altura da logo */
+  width: auto; /* Largura automática para manter a proporção */
+  margin-right: 20px; /* Espaçamento à direita da logo */
+}
+
+.navRight {
+  display: flex;
+  gap: 36px;
+}
+
+.navRight a {
+  text-decoration: none;
+  color: white; /* Links brancos */
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navRight a:hover {
+  color: #ffccff; /* Um roxinho claro quando passa o mouse */
+}
