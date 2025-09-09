@@ -1,1 +1,1 @@
-export { Gamificacao } from './Gamificacao.jsx';
+export * from './Gamificacao';

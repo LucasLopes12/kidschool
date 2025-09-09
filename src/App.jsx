@@ -1,22 +1,17 @@
 import './App.css';
-import { useEffect } from 'react';
-import { Painel } from './components/Painel';
-import { Cabecalho } from './components/Cabecalho';
-import { Gamificacao } from './components/Gamificacao';
+import { Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import NotFound from './pages/NotFound';
+import Cadastro from './pages/Cadastro'; // 1. Importe o componente de cadastro
 
 function App() {
-
-  useEffect(() => {
-    document.title = 'Kidschool - Aprendizagem'
-  });
-
   return (
-    <>
-      <Cabecalho/>
-      <Painel/>
-      <Gamificacao/>
-    </>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/cadastro" element={<Cadastro />} /> {/* 2. Adicione a rota para /cadastro */}
+      <Route path="*" element={<NotFound />} />
+    </Routes>
   );
 };
 
-export default App
+export default App;

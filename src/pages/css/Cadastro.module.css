@@ -1,0 +1,96 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #5a189a;
+    /* Fundo roxo escuro */
+    font-family: 'Arial', sans-serif;
+}
+
+.form {
+    background: #7b2cbf;
+    /* Tom de roxo mais claro para o formulário */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.title {
+    font-size: 2rem;
+    color: #fff;
+    /* Letras brancas */
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: #e0e0e0;
+    /* Letras em tom de branco */
+    margin-bottom: 30px;
+}
+
+.inputGroup {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.inputGroup label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #fff;
+    /* Letras brancas */
+}
+
+.inputGroup input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    background-color: #fff;
+    /* Espaços de escrita brancos */
+    color: #333;
+    /* Cor do texto dentro do input */
+}
+
+.button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #9d4edd;
+    /* Botão em roxo mais claro */
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #c77dff;
+}
+
+.loginLink {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #e0e0e0;
+    /* Letras em tom de branco */
+}
+
+.loginLink a {
+    color: #fff;
+    /* Link em branco */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.loginLink a:hover {
+    text-decoration: underline;
+}
