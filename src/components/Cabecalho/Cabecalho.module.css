@@ -1,32 +1,71 @@
 .cabecalho {
-  background-color: #6a0dad; /* Roxo */
-  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.logo a {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #7b2cbf;
+  text-decoration: none;
 }
 
 .nav {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  gap: 2rem;
 }
 
-.logo {
-  height: 50px; /* Altura da logo */
-  width: auto; /* Largura automática para manter a proporção */
-  margin-right: 20px; /* Espaçamento à direita da logo */
-}
-
-.navRight {
-  display: flex;
-  gap: 36px;
-}
-
-.navRight a {
+.nav a {
   text-decoration: none;
-  color: white; /* Links brancos */
-  font-weight: 500;
+  color: #333;
+  font-weight: 600;
   transition: color 0.3s;
 }
 
-.navRight a:hover {
-  color: #ffccff; /* Um roxinho claro quando passa o mouse */
+.nav a:hover {
+  color: #7b2cbf;
+}
+
+.menuHamburguer {
+  display: none;
+  /* Escondido em telas grandes */
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #7b2cbf;
+}
+
+/* Media Query para telas de celular */
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+    /* Esconde a navegação normal */
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    /* Altura do cabeçalho */
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav.navAtiva {
+    display: flex;
+    /* Mostra o menu quando ativo */
+  }
+
+  .menuHamburguer {
+    display: block;
+    /* Mostra o botão hambúrguer */
+  }
 }

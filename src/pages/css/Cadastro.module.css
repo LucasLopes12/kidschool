@@ -113,3 +113,19 @@
 .loginLink a:hover {
     text-decoration: underline;
 }
+
+/* Adicione o código abaixo ao final do arquivo */
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    .form {
+        padding: 25px;
+        box-shadow: none;
+    }
+
+    .title {
+        font-size: 1.8rem;
+    }
+}

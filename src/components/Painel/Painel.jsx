@@ -1,27 +1,15 @@
 import React, { useRef } from 'react';
 import styles from './Painel.module.css';
 
+// Vamos criar uma lista de matérias para exibir
 const materias = [
-  "Matemática", "Português", "História", "Geografia", "Ciências",
-  "Física", "Química", "Biologia", "Inglês", "Educação Física",
-  "Artes", "Filosofia", "Sociologia"
+  { nome: 'Matemática', icone: '🧮' },
+  { nome: 'Português', icone: '📚' },
+  { nome: 'Ciências', icone: '🔬' },
+  { nome: 'História', icone: '📜' },
+  { nome: 'Geografia', icone: '🌍' },
+  { nome: 'Artes', icone: '🎨' },
 ];
-
-const coresPorMateria = {
-  "Matemática": "#f28b82",
-  "Português": "#aecbfa",
-  "História": "#fff475",
-  "Geografia": "#d7aefb",
-  "Ciências": "#a7ffeb",
-  "Física": "#fdcfe8",
-  "Química": "#cbf0f8",
-  "Biologia": "#ccff90",
-  "Inglês": "#fbbc04",
-  "Educação Física": "#ffab91",
-  "Artes": "#d7aefb",
-  "Filosofia": "#fef08a",
-  "Sociologia": "#c8e6c9",
-};
 
 const Painel = () => {
   const scrollRef = useRef(null);
@@ -50,12 +38,9 @@ const Painel = () => {
 
         <div className={styles.carrossel} ref={scrollRef}>
           {materias.map((materia, index) => (
-            <div
-              key={index}
-              className={styles.cardMateria}
-              style={{ backgroundColor: coresPorMateria[materia] || '#ffffff' }}
-            >
-              <div className={styles.tituloMateria}>{materia}</div>
+            <div key={index} className={styles.cardMateria}>
+              <span className={styles.icone}>{materia.icone}</span>
+              <h3 className={styles.nomeMateria}>{materia.nome}</h3>
             </div>
           ))}
         </div>

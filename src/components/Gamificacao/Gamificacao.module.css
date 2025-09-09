@@ -73,4 +73,23 @@
 
 .conteudo {
   max-width: 500px;
-};
+}
+
+/* Adicione o código abaixo ao final do arquivo */
+@media (max-width: 768px) {
+  .fundo {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+    gap: 20px;
+    height: auto;
+  }
+
+  .conteudo h1 {
+    font-size: 1.8rem;
+  }
+
+  .conteudo p {
+    font-size: 1rem;
+  }
+}

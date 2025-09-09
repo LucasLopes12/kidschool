@@ -24,7 +24,8 @@
 
 .carrosselContainer {
   width: 80%;
-  margin: 0 auto; /* centraliza horizontalmente */
+  margin: 0 auto;
+  /* centraliza horizontalmente */
   position: relative;
   display: flex;
   align-items: center;
@@ -48,7 +49,8 @@
 .cardMateria {
   flex: 0 0 auto;
   background-color: #ffffff;
-  width: 300px; /* <- Largura maior para os cards */
+  width: 300px;
+  /* <- Largura maior para os cards */
   height: 200px;
   border-radius: 16px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
@@ -91,21 +93,113 @@
 .seta:hover {
   background-color: rgba(255, 255, 255, 0.3);
 }
+
 .botaoCadastrar {
-  align-self: center;       /* centraliza dentro do flex container .faixaRoxa */
-  margin: 0 0 40px 0;       /* distância abaixo do botão */
+  align-self: center;
+  /* centraliza dentro do flex container .faixaRoxa */
+  margin: 0 0 40px 0;
+  /* distância abaixo do botão */
   padding: 12px 28px;
   font-size: 18px;
   font-weight: bold;
   border-radius: 8px;
   border: none;
-  background-color: #fafafa; /* verde pastel */
+  background-color: #fafafa;
+  /* verde pastel */
   color: purple;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .botaoCadastrar:hover {
-    color: white;
-  background-color: #24aa6c; /* verde mais escuro no hover */
+  color: white;
+  background-color: #24aa6c;
+  /* verde mais escuro no hover */
+}
+
+.painelContainer {
+  padding: 3rem 5%;
+  background-color: #f9f9f9;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #333;
+  margin-bottom: 2.5rem;
+}
+
+/* Layout para Computador (Desktop) */
+.gridMaterias {
+  display: grid;
+  /* Cria 3 colunas de tamanho igual */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  /* Espaçamento entre os cards */
+}
+
+.cardMateria {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.cardMateria:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.icone {
+  font-size: 3.5rem;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.nomeMateria {
+  font-size: 1.3rem;
+  color: #5a189a;
+  margin: 0;
+}
+
+/* --- RESPONSIVIDADE --- */
+
+/* Layout para Tablets */
+@media (max-width: 992px) {
+  .gridMaterias {
+    /* Em tablets, mostra 2 colunas */
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Layout para Celulares */
+@media (max-width: 768px) {
+  .titulo {
+    font-size: 1.8rem;
+  }
+
+  .gridMaterias {
+    /* Em celulares, agora mostra 2 colunas */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    /* Diminuí o espaçamento para caber melhor */
+  }
+
+  .cardMateria {
+    /* Diminuí o padding para o card ficar mais "fino" */
+    padding: 20px 15px;
+  }
+
+  .icone {
+    font-size: 2.5rem;
+    /* Ícone um pouco menor */
+  }
+
+  .nomeMateria {
+    font-size: 1rem;
+    /* Fonte um pouco menor */
+  }
 }
