@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Contato.module.css';
+import styles from './css/Contato.module.css';
 import { Link } from 'react-router-dom';
 
 const Contato = () => {

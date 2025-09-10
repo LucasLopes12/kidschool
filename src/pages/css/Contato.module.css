@@ -1,0 +1,94 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #5a189a;
+    /* Fundo roxo escuro */
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+}
+
+.card {
+    background: #7b2cbf;
+    /* Tom de roxo mais claro */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    color: #fff;
+}
+
+.title {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: #e0e0e0;
+    margin-bottom: 40px;
+}
+
+.contactList {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.contactItem {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contactItem:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.02);
+}
+
+.icon {
+    font-size: 2rem;
+    margin-right: 20px;
+}
+
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.contactInfo strong {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.contactInfo span {
+    font-size: 0.9rem;
+    color: #e0e0e0;
+}
+
+.homeLink {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #7b2cbf;
+    background-color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.homeLink:hover {
+    background-color: #e0e0e0;
+}

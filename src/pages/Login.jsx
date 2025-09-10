@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom'; // 1. Importe o useNavigat
 import styles from './css/Login.module.css';
 
 const Login = () => {
+
     const [email, setEmail] = useState('');
     const [senha, setSenha] = useState('');
     const [showPassword, setShowPassword] = useState(false); // Estado para controlar a visibilidade
